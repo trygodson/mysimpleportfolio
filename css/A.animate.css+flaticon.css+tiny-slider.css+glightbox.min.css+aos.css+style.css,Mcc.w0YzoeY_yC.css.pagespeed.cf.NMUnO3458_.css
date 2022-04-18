@@ -6350,9 +6350,16 @@ textarea.form-control {
   color: #fc6d6d;
   margin: 0 10px;
 }
-@media (min-width: 767px) {
+@media (min-width: 1100px) {
   .nww {
     width: 43%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 960px) {
+  .nww {
+    width: 100%;
     display: flex;
     justify-content: center;
   }
