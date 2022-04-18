@@ -130,16 +130,25 @@
           font-size: 45px;
         }
       }
-      @media (max-width: 900px) {
+      @media only screen and (min-width: 600px) and (max-width: 900px) {
         .hero-wrap .slider-text .subheading {
           color: white !important;
+        }
+        .wrapper .static-txt {
+          color: white;
+        }
+        .dynamic-txts li span::after {
+          display: none;
+        }
+      }
+      @media (max-width: 900px) {
+        .hero-wrap .slider-text .subheading {
         }
         .wrapper {
           text-align: center;
         }
         .wrapper .static-txt {
           font-size: 55px;
-          color: white;
         }
         ul.dynamic-txts {
           margin-bottom: 0 !important;
@@ -147,9 +156,6 @@
         .dynamic-txts li {
           font-size: 49px;
           padding: none;
-        }
-        .dynamic-txts li span::after {
-          display: none;
         }
         .dynamic-txts li span.block {
           font-size: 45px;
